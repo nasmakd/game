@@ -31,14 +31,14 @@ export default function App() {
       유저 == paper, 컴퓨터 == rock --> 유저 Win
       유저 == paper, 컴퓨터 == scissors --> 유저 Lose
     */ 
-    if(uc.name == cc.name){
+    if(uc.name === cc.name){
       return 'Draw';
-    }else if(uc.name == 'Rock'){
-      return cc.name == 'Scissors' ? 'Win':'Lose';
-    }else if(uc.name == 'Scissors'){
-      return cc.name == 'Paper' ? 'Win':'Lose';
-    }else if(uc.name == 'Paper'){
-      return cc.name == 'Rock' ? 'Win':'Lose';
+    }else if(uc.name === 'Rock'){
+      return cc.name === 'Scissors' ? 'Win':'Lose';
+    }else if(uc.name === 'Scissors'){
+      return cc.name === 'Paper' ? 'Win':'Lose';
+    }else if(uc.name === 'Paper'){
+      return cc.name === 'Rock' ? 'Win':'Lose';
     }
   }
   const randomChoice = ()=>{
